@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocuChain - Web3 Document Security</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🔐 DocuChain</div>
+    <ul class="nav-links">
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#upload">Upload</a></li>
+      <li><a href="#verify">Verify</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#features">Features</a></li>
+    </ul>
+    <button class="btn-primary">Get Started</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Web3 Document Security v2.0</span>
+      <h1>DocuChain</h1>
+      <p>
+        Blockchain-Based Secure Document Vault. Eliminate fraud with
+        tamper-proof, decentralized document verification powered by SHA-256.
+      </p>
+      <div class="hero-buttons">
+        <a href="#upload" class="btn-primary">Upload Document</a>
+        <a href="#verify" class="btn-secondary">Verify Integrity</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Problem Section -->
+  <section class="section light">
+    <h2>The Trust Crisis</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Document Fraud</h3>
+        <p>Fake certificates and manipulated legal documents are increasing globally.</p>
+      </div>
+      <div class="card">
+        <h3>Manual Latency</h3>
+        <p>Traditional verification processes are slow and require intermediaries.</p>
+      </div>
+      <div class="card">
+        <h3>Centralized Vulnerability</h3>
+        <p>Centralized databases are vulnerable to hacking and tampering.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="section" id="solution">
+    <h2>Our Immutable Solution</h2>
+    <div class="card-grid">
+      <div class="card">SHA-256 Hashing</div>
+      <div class="card">Blockchain Anchoring (Ethereum / Polygon)</div>
+      <div class="card">Decentralized IPFS Storage</div>
+      <div class="card">Instant Verification</div>
+    </div>
+  </section>
+
+  <!-- Upload Section -->
+  <section class="section light" id="upload">
+    <h2>Secure Upload Vault</h2>
+    <div class="upload-box">
+      <input type="file" id="fileInput">
+      <button onclick="storeDocument()" class="btn-primary">Upload & Store</button>
+      <p id="storedHash"></p>
+      <p id="timestamp"></p>
+    </div>
+  </section>
+
+  <!-- Verify Section -->
+  <section class="section" id="verify">
+    <h2>Verification Hub</h2>
+    <div class="upload-box">
+      <input type="file" id="verifyInput">
+      <button onclick="verifyDocument()" class="btn-primary">Verify</button>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <!-- Architecture Section -->
+  <section class="section light" id="architecture">
+    <h2>System Architecture</h2>
+    <div class="card-grid">
+      <div class="card">Frontend: HTML, CSS, JavaScript</div>
+      <div class="card">Hashing: SHA-256</div>
+      <div class="card">Blockchain: Ethereum / Polygon</div>
+      <div class="card">Storage: IPFS</div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <h2>Key Features</h2>
+    <div class="card-grid">
+      <div class="card">Tamper-Proof Records</div>
+      <div class="card">Timestamped Transactions</div>
+      <div class="card">Fraud Detection</div>
+      <div class="card">Scalable Startup Model</div>
+    </div>
+  </section>
+  <section class="solution-section">
+  <div class="solution-container">
+    <div class="solution-image">
+      <img src="images/lock.jpg" alt="Blockchain Security">
+    </div>
+
+    <div class="solution-text">
+      <h2>Our Immutable Solution</h2>
+      <ul>
+        <li>SHA-256 Hashing</li>
+        <li>Blockchain Anchoring</li>
+        <li>Decentralized IPFS Storage</li>
+        <li>Instant Verification</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    © 2026 DocuChain | Trust • Transparency • Security
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
